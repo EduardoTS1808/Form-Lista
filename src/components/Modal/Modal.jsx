@@ -5,6 +5,8 @@ import BtnClose from './BtnClose';
 export default function MyModal(props) {
 
   const [showModal, setShowModal] = useState(false);
+
+
   return (
     <>
       <button onClick={() => setShowModal(true)}>
@@ -14,7 +16,6 @@ export default function MyModal(props) {
      
           <BtnClose key={props.esteItem.id} userInfo={props.esteItem} onClose={() => setShowModal(false)} />
       }
-      {console.log(props.esteItem)}
     </>
   )
 }

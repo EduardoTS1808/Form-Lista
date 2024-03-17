@@ -11,7 +11,7 @@
      
      constructor(props){
         super(props);
-        this.dados = [];
+        this.itemSelecionado = '';
         this.nextId = 0;
         this.state = {
             id: '',
@@ -19,8 +19,14 @@
             number:'',
             genero: '',
             estatus:'',
-            validate: "OFF"
+            validate: "OFF",
+            dados:[],
         }
+        // ,
+        // dados = [];
+
+
+    
     }
 
     hendleOnChange = (event)=>{
@@ -38,6 +44,13 @@
         this.setState({id: this.nextId++})
         
     }
+    removeDados = ()=>{
+        const newList = this.state.dados.filter(item=> item.id !== this.itemSelecionado)
+        this.setState({dados: newList})
+
+        
+    }  
+      
     
   
     render(){
@@ -73,14 +86,16 @@
              {(this.state.validate === "OFF") ? <MsgErro />: <p>Enviado com Sucesso!</p> }
          
 
-          
+        {/* {console.log(this.itemSelecionado)}   */}
+        {/* {console.log(this.state.dados)}   */}
         </form>
            <div className='lista'>
                  <h3>Lista de Candidatos</h3>
 
                  <div>
                         <Lista
-                    candidatos={this.dados}
+                    candidatos={this.state.validate}
+                    limpaList={this.removeDados}
                     />
               </div>
        </div>

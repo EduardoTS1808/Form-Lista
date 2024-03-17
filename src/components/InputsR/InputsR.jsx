@@ -38,7 +38,7 @@ function InputsRadio (props){
          </div>
         </div>
         <div className="container" >
-           <h5>Estatus Civil:</h5>
+           <h5>Estado Civil:</h5>
           <div className="opction">
              <label >Solteiro(a)</label>
               <input 

@@ -7,8 +7,8 @@ function Lista(props){
 
     return(
         <div>
-        <Candidatos key={candidatos.id} itens={candidatos}/>
-        {/* {console.log(candidatos)}/ç  */}
+        <Candidatos key={candidatos.id} itens={candidatos} limparLista={props.limpaList}/>
+        {/* {console.log(candidatos)}/  */}
         </div>
     )
 }
