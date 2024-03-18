@@ -13,6 +13,7 @@
         super(props);
         this.itemSelecionado = '';
         this.nextId = 0;
+this.dados = [];
         this.state = {
             id: '',
             name: '',
@@ -94,7 +95,7 @@
 
                  <div>
                         <Lista
-                    candidatos={this.state.validate}
+                    candidatos={this.dados}
                     limpaList={this.removeDados}
                     />
               </div>
