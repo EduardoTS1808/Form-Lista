@@ -56,7 +56,7 @@ class Formulario extends Component{
            this.setState({formDados:{...dados, validate: "ON"}})
             this.setState({candidatos:{...[], dados}})
             //funciona, mas não salva os dados anteriores
-            // this.setState({candidatos:[...]})
+            // this.setState(prevState =>({candidatos:[...prevState.candidatos, dados]}))
             return
           
         
