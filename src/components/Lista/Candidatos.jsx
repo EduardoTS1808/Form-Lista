@@ -1,8 +1,6 @@
-import React,{useState} from "react";
-import MyModal from "../Modal/Modal";
+import React from "react";
 
 function Candidatos (props){
-    // const [itemSelecionado, setItemSelecionado] = useState([])
   
    
     const lista = {
@@ -26,18 +24,13 @@ function Candidatos (props){
 
     return(
         <div style={lista}>
-              {props.itens.map(item=> 
-               
-                <div key={item.id} style={{display: 'block',background: '#e9e9e9', margin:'10px' }} >
-                    <p style={itemStyle}>Nome: {item.name}</p>
-                    <div> 
-                        <button onClick={props.limparLista}
-                        >selecionar</button>
-                    </div>
 
-                    <MyModal  esteItem={item}/>
+               
+                <div key={props.itens} style={{display: 'block',background: '#e9e9e9', margin:'10px' }} >
+                    <p style={itemStyle}> {props.name}</p>
+                   
                 </div>
-                )}
+              
                 
         </div>
     )

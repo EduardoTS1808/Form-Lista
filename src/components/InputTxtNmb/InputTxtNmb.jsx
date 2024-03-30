@@ -7,8 +7,9 @@ function Inputs (props){
                 <label >Nome</label>
                 <input 
                 type="text"
-                name="name"
+                name="nome"
                 placeholder="digite seu nome"
+                value={props.estado.nome}
                 onChange={props.funcEv} 
                 />
             </div>
@@ -16,8 +17,9 @@ function Inputs (props){
                 <label >Telefone</label>
                 <input
                 type="number"
-                name="number"
+                name="numero"
                 placeholder="(85) 987654321" 
+                value={props.estado.numero}
                 onChange={props.funcEv}
                 />
             </div>

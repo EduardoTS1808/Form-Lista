@@ -44,7 +44,7 @@ function InputsRadio (props){
               <input 
               type="radio"
                id="04"
-                name="estatus"
+                name="estado"
                  value="solteiro"
                  />
          </div>
@@ -53,7 +53,7 @@ function InputsRadio (props){
             <input 
             type="radio"
              id="05"
-              name="estatus"
+              name="estado"
                value="casado"
                />
          </div>
@@ -62,7 +62,7 @@ function InputsRadio (props){
             <input 
             type="radio"
              id="06"
-              name="estatus"
+              name="estado"
                value="separado"
                />
          </div>
@@ -71,7 +71,7 @@ function InputsRadio (props){
               <input 
               type="radio"
                id="07"
-                name="estatus"
+                name="estado"
                  value="divorcial" 
                  />
          </div>
@@ -80,7 +80,7 @@ function InputsRadio (props){
               <input 
               type="radio"
                id="08"
-                name="estatus"
+                name="estado"
                  value="viuvo" 
                  />
          </div>
