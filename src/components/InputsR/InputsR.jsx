@@ -6,7 +6,6 @@ function InputsRadio (props){
     
     return(
         <div onChange={props.opcao}>
-         {/* onChange={(event)=>console.log(event.target.value)} */}
         <div  className="container">
            <h5>Genero: </h5>
           <div className="opction">
@@ -16,6 +15,7 @@ function InputsRadio (props){
                id="01"
                 name="genero" 
                 value="masculino"
+                onChange={props.opcao} 
                 />
          </div>
           <div className="opction">
@@ -25,6 +25,7 @@ function InputsRadio (props){
              id="02"
               name="genero" 
               value="feminino"
+            onChange={props.opcao} 
               />
          </div>
           <div className="opction">
@@ -34,6 +35,7 @@ function InputsRadio (props){
                id="03"
                 name="genero" 
                 value="outro" 
+               onChange={props.opcao} 
                 />
          </div>
         </div>
@@ -46,6 +48,7 @@ function InputsRadio (props){
                id="04"
                 name="estado"
                  value="solteiro"
+               onChange={props.opcao} 
                  />
          </div>
           <div className="opction">
@@ -55,6 +58,7 @@ function InputsRadio (props){
              id="05"
               name="estado"
                value="casado"
+               onChange={props.opcao} 
                />
          </div>
           <div className="opction">
@@ -64,6 +68,7 @@ function InputsRadio (props){
              id="06"
               name="estado"
                value="separado"
+               onChange={props.opcao} 
                />
          </div>
           <div className="opction">
